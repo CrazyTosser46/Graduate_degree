@@ -1,0 +1,9 @@
+*.db
+/machine/
+/.idea/
+/log/
+/resource/
+/lib/
+/threadNegativ/
+/threadPositiv/
+/treatmentUser/

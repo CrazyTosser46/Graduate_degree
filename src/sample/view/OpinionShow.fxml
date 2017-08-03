@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OpinionController">
+   <children>
+      <TextArea fx:id="textAreaUser" layoutX="8.0" layoutY="29.0" prefHeight="200.0" prefWidth="584.0" />
+      <Button layoutX="505.0" layoutY="239.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="25.0" prefWidth="81.0" text="Отправить" />
+      <Label layoutX="8.0" layoutY="14.0" text="Отзыв" />
+      <Separator layoutY="265.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="290.0" />
+      <Label layoutX="26.0" layoutY="278.0" prefHeight="25.0" prefWidth="106.0" text="Результат" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="300.0" />
+      <Label fx:id="labelOpinion" alignment="CENTER" layoutX="5.0" layoutY="299.0" prefHeight="25.0" prefWidth="342.0" text="-" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="320.0">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="240.0" text="Выбран жанр:" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="510.0" AnchorPane.topAnchor="240.0" />
+      <MenuButton fx:id="menuButton" layoutX="113.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#updateMenuButton" prefHeight="25.0" prefWidth="200.0" text="Жанр" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="240.0" />
+      <CheckBox fx:id="morfSDK" layoutX="200.0" layoutY="273.0" mnemonicParsing="false" text="Да" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="273.0" />
+      <Label layoutX="14.0" layoutY="273.0" text="Использовать морфологию?" />
+      <Button layoutX="505.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleTest" prefHeight="25.0" prefWidth="81.0" text="Тест" />
+   </children>
+</AnchorPane>

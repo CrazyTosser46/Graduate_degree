@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddGenreFilmController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Название жанра:" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameGenre" layoutX="130.0" layoutY="17.0" prefHeight="30.0" prefWidth="192.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="20.0" layoutY="56.0" text="Каталог для положительных отзывов:" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="136.0" text="Каталог для отрицательных отзывов:" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="274.0" layoutY="86.0" mnemonicParsing="false" onAction="#handlePositivFolder" text="Выбрать каталог" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0" />
+      <Button layoutX="274.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleNegativFolder" text="Выбрать каталог" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="155.0" />
+      <Button layoutX="312.0" layoutY="219.0" mnemonicParsing="false" onAction="#handleAdd" text="Добавить" AnchorPane.bottomAnchor="15.0" />
+      <CheckBox fx:id="useMorf" layoutX="189.0" layoutY="194.0" mnemonicParsing="false" text="Да" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="195.0" />
+      <Label layoutX="20.0" layoutY="194.0" text="Использовать морфологию?" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="195.0" />
+      <Label fx:id="positivLabel" layoutX="20.0" layoutY="84.0" prefHeight="17.0" prefWidth="231.0" text="..." AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="85.0" />
+      <Label fx:id="negativLabel" layoutX="20.0" layoutY="159.0" prefHeight="17.0" prefWidth="230.0" text="..." AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="160.0" />
+   </children>
+</AnchorPane>

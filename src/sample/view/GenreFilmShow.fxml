@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GenreFilmController">
+   <children>
+      <TableView fx:id="genreTable" layoutX="14.0" layoutY="14.0" prefHeight="228.0" prefWidth="572.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="30.0" text="№" />
+          <TableColumn fx:id="genreColumn" minWidth="1.0" prefWidth="150.0" text="Жанр" />
+            <TableColumn fx:id="useMorf" prefWidth="85.0" text="Морфология" />
+            <TableColumn fx:id="sizePositivColumn" prefWidth="155.0" text="Кол-во положительных" />
+            <TableColumn fx:id="sizeNegativColumn" prefWidth="150.0" text="Кол-во отрицательных" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleAddGenre" prefHeight="25.0" prefWidth="107.0" text="Добавить жанр" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="260.0" />
+      <Button layoutX="479.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="106.0" text="Закрыть" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="360.0" />
+      <Button layoutX="14.0" layoutY="285.0" mnemonicParsing="false" onAction="#deleteGenre" prefHeight="25.0" prefWidth="106.0" text="Удалить жанр" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="285.0" />
+   </children>
+</AnchorPane>

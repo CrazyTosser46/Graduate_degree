@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateTemporaryFileController">
+   <children>
+      <Label fx:id="label" layoutX="14.0" layoutY="42.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="40.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="257.0" layoutY="40.0" prefHeight="17.0" prefWidth="29.0" progress="0.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

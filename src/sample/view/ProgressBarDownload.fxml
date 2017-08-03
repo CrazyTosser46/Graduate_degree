@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProgressBarDownloadController">
+   <children>
+      <Label layoutX="50.0" layoutY="6.0" text="Общая загрузка:" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="5.0" />
+      <ProgressBar fx:id="pbCommonDownload" layoutX="50.0" layoutY="30.0" prefHeight="20.0" prefWidth="245.0" progress="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0" />
+      <ProgressIndicator fx:id="piPositiv" layoutX="250.0" layoutY="65.0" progress="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="65.0" />
+      <Label fx:id="labelFilePositivTop" layoutX="20.0" layoutY="87.0" prefHeight="20.0" prefWidth="190.0" textFill="#0000e8" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="85.0" />
+      <Label fx:id="labelFilePositivBot" layoutX="20.0" layoutY="105.0" prefHeight="20.0" prefWidth="190.0" textFill="#0000e8" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="105.0" />
+      <ProgressIndicator fx:id="piNegativ" layoutX="251.0" layoutY="130.0" progress="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="130.0" />
+      <Label layoutX="21.0" layoutY="77.0" text="Загрузка положительных отзывов" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="21.0" layoutY="142.0" text="Загрузка отрицательных отзывов" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="135.0" />
+      <Label fx:id="labelFileNegativTop" layoutX="20.0" layoutY="152.0" prefHeight="20.0" prefWidth="190.0" textFill="#0000e8" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="152.0" />
+      <Label fx:id="labelFileNegativBot" layoutX="20.0" layoutY="170.0" prefHeight="20.0" prefWidth="190.0" textFill="#0000e8" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="170.0" />
+   </children>
+</AnchorPane>
